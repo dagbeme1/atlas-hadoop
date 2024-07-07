@@ -10,6 +10,12 @@
 # Create the HDFS directory if it does not exist
 #hadoop fs -mkdir -p /holbies/input  # Create the target directory on HDFS
 
+# Upload the file to the HDFS directory using full path
+#$HADOOP_HOME/bin/hdfs dfs -put -f lao.txt /holbies/input
+
+# Optionally, list the contents of the HDFS directory for verification
+# $HADOOP_HOME/bin/hadoop fs -ls /holbies/input
+
 # Upload the file to the HDFS directory
 hdfs dfs -put -f lao.txt/holbies/input  # Use 'put' to upload the file
 
